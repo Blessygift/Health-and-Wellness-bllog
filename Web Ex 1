@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Health & Wellness Blog</title>
+
+    <style>
+        body {
+            background-color: #f0fff0;
+            font-family: Arial;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkgreen;
+        }
+
+        .box {
+            width: 45%;
+            float: left;
+            border: 2px solid green;
+            padding: 15px;
+            margin: 10px;
+            background-color: white;
+            box-sizing: border-box;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid green;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .img {
+            width: 100%;
+            height: 250px;
+        }
+
+        a {
+            text-decoration: none;
+            color: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+
+    <h1 id="top">Health & Wellness Blog</h1>
+
+    <p align="center">
+        Welcome to our Health & Wellness Blog.
+        We share useful tips about healthy living, fitness,
+        nutrition and mental well-being.
+    </p>
+
+
+    <!-- About Us -->
+
+    <div class="box" id="about">
+
+        <h2>About Us</h2>
+
+        <p>
+            Our Health & Wellness Blog provides useful information
+            about maintaining a healthy lifestyle. We share tips
+            about balanced diets, regular exercise, proper sleep
+            and mental health. Our goal is to encourage people
+            to live a happy and healthy life.
+        </p>
+
+    </div>
+
+
+    <!-- Image Section -->
+
+    <div class="box">
+
+        <h2>Healthy Lifestyle</h2>
+
+        <img class="img" src="health.jpg" alt="Healthy Lifestyle">
+
+    </div>
+
+    <div class="clear"></div>
+
+
+    <!-- Health Tips -->
+
+    <div class="box">
+
+        <h2>Healthy Habits</h2>
+
+        <ul>
+            <li>
+                Daily Exercise
+                <ul>
+                    <li>Walking</li>
+                    <li>Yoga</li>
+                    <li>Running</li>
+                </ul>
+            </li>
+
+            <li>Drinking Enough Water</li>
+            <li>Getting Proper Sleep</li>
+        </ul>
+
+    </div>
+
+
+    <!-- Fitness Activities -->
+
+    <div class="box">
+
+        <h2>Fitness Activities</h2>
+
+        <ol>
+            <li>
+                Morning Activities
+                <ol>
+                    <li>Stretching</li>
+                    <li>Walking</li>
+                </ol>
+            </li>
+
+            <li>
+                Evening Activities
+                <ol>
+                    <li>Cycling</li>
+                    <li>Yoga</li>
+                </ol>
+            </li>
+        </ol>
+
+    </div>
+
+    <div class="clear"></div>
+
+
+    <!-- Wellness Features -->
+
+    <div class="box">
+
+        <h2>Wellness Benefits</h2>
+
+        <dl>
+            <dt><b>Healthy Diet</b></dt>
+            <dd>Provides essential nutrients to the body.</dd>
+
+            <dt><b>Regular Exercise</b></dt>
+            <dd>Improves physical fitness and strength.</dd>
+
+            <dt><b>Mental Wellness</b></dt>
+            <dd>Helps reduce stress and improve happiness.</dd>
+        </dl>
+
+    </div>
+
+
+    <!-- Daily Diet Plan -->
+
+    <div class="box">
+
+        <h2>Daily Healthy Diet Plan</h2>
+
+        <table>
+            <tr>
+                <th>Meal</th>
+                <th>Food</th>
+                <th>Benefits</th>
+            </tr>
+
+            <tr>
+                <td>Breakfast</td>
+                <td>Oatmeal</td>
+                <td>Provides Energy</td>
+            </tr>
+
+            <tr>
+                <td>Lunch</td>
+                <td>Rice & Vegetables</td>
+                <td>Provides Nutrients</td>
+            </tr>
+
+            <tr>
+                <td>Dinner</td>
+                <td>Chapati & Fruits</td>
+                <td>Balanced Nutrition</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div class="clear"></div>
+
+
+    <!-- Hyperlinks -->
+
+    <div class="box">
+
+        <h2>Useful Links</h2>
+
+        <p>
+            <a href="https://www.who.int/health-topics"
+               target="_blank">
+                Visit WHO
+            </a>
+        </p>
+
+        <p>
+            <a href="#about">
+                About Us
+            </a>
+        </p>
+
+        <p>
+            <a href="#top">
+                Back to Top
+            </a>
+        </p>
+
+        <p>
+            <a href="mailto:healthblog@gmail.com">
+                Email Us
+            </a>
+        </p>
+
+        <p>
+            <a href="tel:+919876543210">
+                Call Us
+            </a>
+        </p>
+
+        <p>
+            <a href="https://www.who.int/health-topics"
+               target="_blank">
+
+                <img src="health.jpg"
+                     width="150"
+                     height="100"
+                     alt="Health Image">
+
+            </a>
+        </p>
+
+    </div>
+
+
+    <!-- Contact Section -->
+
+    <div class="box">
+
+        <h2>Contact Us</h2>
+
+        <p><b>Email:</b> healthblog@gmail.com</p>
+
+        <p><b>Phone:</b> +91 9876543210</p>
+
+        <p><b>Address:</b> Coimbatore, Tamil Nadu</p>
+
+    </div>
+
+    <div class="clear"></div>
+
+</body>
+
+</html>
