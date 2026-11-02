@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthyLife Wellness Customizer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Healthy<span>Life</span></h1>
+        <p>Make Your Wellness Your Own</p>
+    </header>
+
+    <!-- Main Section -->
+    <section class="main">
+        <div class="intro">
+            <p class="tag">PERSONALISE YOUR WELLNESS</p>
+            <h2>Build Your <span>Healthy Lifestyle</span></h2>
+            <p>
+                Choose your favourite theme colour, background
+                and text size to personalise your wellness page.
+            </p>
+        </div>
+
+        <!-- Customizer -->
+        <div class="customizer">
+            <!-- Preview Section -->
+            <div class="preview">
+                <h3>Your Wellness Preview</h3>
+
+                <div class="wellness-scene" id="wellnessScene">
+                    <div class="wellness-content">
+                        <div class="leaf"></div>
+                        <h2 id="previewTitle">
+                            Healthy Living
+                        </h2>
+                        <p id="previewText">
+                            Eat Healthy, Stay Active and Keep Smiling!
+                        </p>
+                        <button class="preview-button">
+                            Stay Healthy
+                        </button>
+                    </div>
+                </div>
+
+                <p id="message">
+                    Your wellness page is ready to customise!
+                </p>
+            </div>
+
+            <!-- Controls Section -->
+            <div class="controls">
+                <h3>Customise Your Wellness Page</h3>
+
+                <label for="colour">Theme Colour</label>
+                <input type="color" id="colour" value="#164b3e">
+
+                <label for="background">Background Colour</label>
+                <select id="background">
+                    <option value="#e5f1e8">Light Green</option>
+                    <option value="#f5f5f5">Light Grey</option>
+                    <option value="#fff0d9">Cream</option>
+                    <option value="#e5e9f5">Light Blue</option>
+                </select>
+
+                <label for="textSize">Text Size</label>
+                <input
+                    type="range"
+                    id="textSize"
+                    min="14"
+                    max="28"
+                    value="18">
+
+                <p>
+                    Size: <span id="size">18</span> px
+                </p>
+
+                <button id="apply">
+                    Apply Changes
+                </button>
+
+                <button id="reset">
+                    Reset Settings
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>HealthyLife</h2>
+        <p>Your Health, Our Priority.</p>
+        <p>© 2026 HealthyLife Health & Wellness Blog</p>
+        <p>Web Technology Lab | Coimbatore, Tamil Nadu</p>
+    </footer>
+
+    <!-- jQuery -->
+    <script>
+        $(document).ready(function() {
+
+            // Apply Customisation
+            $("#apply").click(function() {
+                let themeColour = $("#colour").val();
+                let backgroundColour = $("#background").val();
+                let textSize = $("#textSize").val();
+
+                $(".wellness-scene").css(
+                    "background-color",
+                    backgroundColour
+                );
+
+                $(".wellness-content h2").css(
+                    "color",
+                    themeColour
+                );
+
+                $(".wellness-content p").css(
+                    "font-size",
+                    textSize + "px"
+                );
+
+                $(".preview-button").css(
+                    "background-color",
+                    themeColour
+                );
+
+                $("#message").text(
+                    "Your wellness page has been customised!"
+                );
+            });
+
+            // Display Text Size
+            $("#textSize").on("input", function() {
+                $("#size").text($(this).val());
+            });
+
+            // Reset Settings
+            $("#reset").click(function() {
+                $("#colour").val("#164b3e");
+                $("#background").val("#e5f1e8");
+                $("#textSize").val(18);
+
+                $(".wellness-scene").css(
+                    "background-color",
+                    "#e5f1e8"
+                );
+
+                $(".wellness-content h2").css(
+                    "color",
+                    "#164b3e"
+                );
+
+                $(".wellness-content p").css(
+                    "font-size",
+                    "18px"
+                );
+
+                $(".preview-button").css(
+                    "background-color",
+                    "#164b3e"
+                );
+
+                $("#size").text("18");
+
+                $("#message").text(
+                    "Your wellness settings have been reset."
+                );
+            });
+
+        });
+    </script>
+</body>
+
+</html>
